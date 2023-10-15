@@ -7,48 +7,51 @@
     <title>CS Survey</title>
 </head>
 <body>
-    <h1 id="title">Computer Science Survey Form</h1>
-    <p id="description">A short survey on your opinions about Computer Science</p>
+    <div class="content-background">
+        <h1 id="title">Computer Science Survey Form</h1>
+        <p id="description" class="end-header">A short survey on your opinions about Computer Science</p>
 
-    <form id="survey-form">
-        <fieldset>
-            <label for="name-label">Name <input id="name-label" type="text" name="name-label" placeholder="Enter your name..." required/></label>
-            <label for="email-label">Email <input id="email-label" type="email" name="email-label" placeholder="Enter your email..." required/></label>
-            <label for="number-label">Age <input id="number-label" id="number" type="number" name="number-label" min="13" max="120" placeholder="Enter your age..." required/></label>
-        </fieldset>
+        <form id="survey-form">
+            <h2 id="basic-info">Basic Information:</h2>
+            <fieldset class="basic-info-fieldset">
+                <label for="name" id="name-label">Name <input id="name" type="text" name="name-label" placeholder="Enter your name..." required/></label>
+                <label for="email" id="email-label">Email <input id="email" type="email" name="email-label" placeholder="Enter your email..." required/></label>
+                <label for="number" id="number-label">Age <input id="number" id="number" type="number" name="number-label" min="13" max="120" placeholder="Enter your age..." required/></label>
+            </fieldset>
 
-        <fieldset>
-            <label for="dropdown">What best describes your current role?
-                <select id="dropdown" name="role">
-                    <option value="">(select one)</option>
-                    <option value="1">Hobbiest/Tinkerer</option>
-                    <option value="2">Student</option>
-                    <option value="3">Employed in a CS related occupation</option>
-                    <option value="4">Teacher/Professor</option>
-                    <option value="5">Other</option>
-                </select>
-            </label>
+            <fieldset class="main-fieldset">
+                <label for="dropdown">What best describes your current role?
+                    <select id="dropdown" name="role">
+                        <option value="">(select one)</option>
+                        <option value="1">Hobbiest/Tinkerer</option>
+                        <option value="2">Student</option>
+                        <option value="3">Employed in a CS related occupation</option>
+                        <option value="4">Teacher/Professor</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
 
-            <label for="timeframe">When did you start learning Computer Science?</label>
-            <label for="0-4yr"><input id="0-4yr" type="radio" name="timeframe" class="inline" checked/>0-4 years</label>
-            <label for="4-10yr"><input id="4-10yr" type="radio" name="timeframe" class="inline"/>4-10 years</label>
-            <label for="10+yr"><input id="10+yr" type="radio" name="timeframe" class="inline"/>10+ years</label>
+                <label for="timeframe" class="timeframe">When did you start learning Computer Science?</label>
+                <label for="0-4yr"><input id="0-4yr" type="radio" name="timeframe" value="0-4" class="inline" checked/>0-4 years</label>
+                <label for="4-10yr"><input id="4-10yr" type="radio" name="timeframe" value="4-10" class="inline"/>4-10 years</label>
+                <label for="10+yr"><input id="10+yr" type="radio" name="timeframe" value="10+" class="inline"/>10+ years</label>
 
-            <label for="favorite">What is your favorite part about Computer Science?
-                <textarea id="favorite" name="favorite" rows="3" cols="30" placeholder="Type your thoughts here..."></textarea>
-            </label>
+                <label for="favorite", class="favorite">What is your favorite part about Computer Science?
+                    <textarea id="favorite" name="favorite" rows="3" cols="30" placeholder="Type your thoughts here..."></textarea>
+                </label>
 
-            <label for="langs">What programming languages do you know?</label>
-            <label for="c"><input id="c" type="checkbox" name="langs" value="c" class="inline"/>C</label>
-            <label for="cpp"><input id="cpp" type="checkbox" name="langs" value="cpp" class="inline"/>C++</label>
-            <label for="java"><input id="java" type="checkbox" name="langs" value="java" class="inline"/>Java</label>
-            <label for="ruby"><input id="ruby" type="checkbox" name="langs" value="ruby" class="inline"/>Ruby</label>
-            <label for="python"><input id="python" type="checkbox" name="langs" value="python" class="inline"/>Python</label>
-            <label for="js"><input id="js" type="checkbox" name="langs" value="js" class="inline"/>JavaScript</label>
-            <label for="rust"><input id="rust" type="checkbox" name="langs" value="rust" class="inline"/>Rust</label>
-        </fieldset>
+                <label for="langs" class="langs">What programming languages do you know?</label>
+                <label for="c"><input id="c" type="checkbox" name="langs" value="c" class="inline"/>C</label>
+                <label for="cpp"><input id="cpp" type="checkbox" name="langs" value="cpp" class="inline"/>C++</label>
+                <label for="java"><input id="java" type="checkbox" name="langs" value="java" class="inline"/>Java</label>
+                <label for="ruby"><input id="ruby" type="checkbox" name="langs" value="ruby" class="inline"/>Ruby</label>
+                <label for="python"><input id="python" type="checkbox" name="langs" value="python" class="inline"/>Python</label>
+                <label for="js"><input id="js" type="checkbox" name="langs" value="js" class="inline"/>JavaScript</label>
+                <label for="rust"><input id="rust" type="checkbox" name="langs" value="rust" class="inline"/>Rust</label>
+            </fieldset>
 
-        <input type="submit" value="Submit" />
-    </form>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+    </div>
 </body>
 </html>
