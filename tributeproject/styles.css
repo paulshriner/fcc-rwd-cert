@@ -1,0 +1,52 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#title {
+    padding-top: 1em;
+    font-size: 3em;
+}
+
+#title-caption {
+    padding-top: 1em;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+#img-caption {
+    padding-top: 1em;
+}
+
+section > h3 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+section > ul {
+    max-width: 30%;
+    list-style-type: none;
+}
+
+section > ul > li {
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+blockquote {
+    text-align: left;
+    max-width: 50%;
+}
+
+blockquote > p {
+    padding-bottom: 2em;
+}
+
+blockquote > cite {
+    padding-left: 10em;
+}
