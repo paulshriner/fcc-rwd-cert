@@ -4,6 +4,17 @@
     text-align: center;
 }
 
+body {
+    background-image: url(https://creativity103.com/collections/Graphic/slides/rainbowbars.jpg);
+}
+
+main {
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+}
+
 #title {
     padding-top: 1em;
     font-size: 3em;
@@ -11,6 +22,7 @@
 
 #title-caption {
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #image {
@@ -25,28 +37,18 @@
 
 section > h3 {
     padding-top: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
 }
 
 section > ul {
-    max-width: 30%;
+    width: 40%;
     list-style-type: none;
 }
 
-section > ul > li {
-    text-align: left;
+.point {
     padding-bottom: 2em;
-}
-
-blockquote {
-    text-align: left;
-    max-width: 50%;
 }
 
 blockquote > p {
-    padding-bottom: 2em;
-}
-
-blockquote > cite {
-    padding-left: 10em;
+    padding-bottom: 1.5em;
 }
