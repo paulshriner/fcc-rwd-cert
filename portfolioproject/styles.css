@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar {
+    /* Thanks https://www.freecodecamp.org/news/how-to-keep-a-navbar-at-the-top-of-my-viewport/ for help with navbar at top of viewport. */
+    position: fixed;
+    width: 100%;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #0eaa8b;
+}
+
+#navbar a {
+    color: black;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: block;
+    text-align: center;
+    padding-top: 30vh;
+    background-color: lightgray;
+}
+
+#welcome-section h1 {
+    font-size: 5rem;
+}
+
+#welcome-section p {
+    font-size: 2rem;
+    font-style: italic;
+    color: #0eaa8b;
+}
+
+#projects {
+    height: 100vh;
+    display: block;
+    text-align: center;
+    padding-top: 30vh;
+    background-color: lightblue;
+}
+
+#projects h2 {
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+#project-subheading {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    font-style: italic;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 5rem;
+    justify-content: center;
+}
+
+.project-tile p {
+    padding-bottom: 2rem;
+}
+
+#contact {
+    height: 100vh;
+    display: block;
+    text-align: center;
+    padding-top: 30vh;
+    background-color: lightgray;
+}
+
+#contact h2 {
+    font-size: 4rem;
+    padding-bottom: 4rem;
+}
+
+#contact a {
+    font-size: 2rem;
+}
+
+#contact a:first-of-type {
+    padding-right: 5rem;
+}
+
+@media (max-width: 700px) {
+    #welcome-section, #contact {
+        height: 150vh;
+    }
+    #projects {
+        height: 200vh;
+    }
+    .grid {
+        grid-template-columns: auto;
+    }
+    #contact a {
+        font-size: 1rem;
+    }
+}
