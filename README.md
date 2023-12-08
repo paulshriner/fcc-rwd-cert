@@ -14,7 +14,7 @@ These are the projects I did in the completion of this certificate.
 
         A page with information about iOS jailbreaking.
 
-* Project Landing Machine
+* Project Landing Page
 
         A page about the Useless Machine, the most useful machine in the world...
 
