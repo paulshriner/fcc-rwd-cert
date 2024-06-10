@@ -1,7 +1,6 @@
 * {
     margin: 0 auto;
     padding: 0;
-    text-align: center;
 }
 
 body {
@@ -10,18 +9,25 @@ body {
 
 main {
     width: 75%;
+    min-height: 100vh; /* Thanks https://alvarotrigo.com/blog/how-to-create-websites-fullscreen-sections-html-and-css/ for full height element */
     background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(0, 0, 0, 0.9);
     border-radius: 50px;
 }
 
-#title {
+#title, #title-caption, #img-caption, section > h3, blockquote {
+    text-align: center;
+}
+
+#title, #title-caption {
     padding-top: 1em;
+}
+
+#title {
     font-size: 3em;
 }
 
 #title-caption {
-    padding-top: 1em;
     padding-bottom: 1em;
 }
 
@@ -45,10 +51,18 @@ section > ul {
     list-style-type: none;
 }
 
+li > strong {
+    font-size: 150%;
+}
+
 .point {
     padding-bottom: 2em;
 }
 
+blockquote {
+    padding-top: 1.5em;
+}
+
 blockquote > p {
-    padding-bottom: 1.5em;
+    padding-bottom: 0.5em;
 }
