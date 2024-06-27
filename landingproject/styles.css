@@ -40,23 +40,94 @@ header {
     justify-content: space-evenly;
 }
 
-#Usage, #Description, #HowtoGet {
+#nav-bar a {
+    text-decoration: none;
+}
+
+#tagline {
+    padding-top: 100px;
+}
+
+#tagline, #usage, #description, #howtoget {
     display: flex;
     justify-content: center;
 }
 
-#Usage {
-    padding: 80px 0 20px 0;
+#usage {
+    padding: 60px 0;
 }
 
-#Description, #HowtoGet, #mailing-list, #mailing-list h2 {
+#description, #howtoget, #mailing-list, #mailing-list h2 {
     padding-bottom: 20px;
     text-align: center;
+    margin: 0 auto;
     font-size: 100%;
+    width: 50%;
+    flex-wrap: wrap;
 }
 
-#mailing-list {
+#list {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+#list h2 {
     text-align: center;
+}
+
+#list ul {
+    padding-top: 20px;
+    margin-left: 40px;
+}
+
+#items-tagline {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#items {
+    display: flex;
+    justify-content: center;
+    /* Thanks https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap for column-gap (and row-gap) */
+    column-gap: 10px;
+    text-align: center;
+    padding: 20px 0 60px;
+}
+
+.item {
+    padding: 10px;
+    background-color: lightgray;
+    border: 2px solid darkred;
+    border-radius: 20px;
+    min-width: 300px;
+}
+
+.item * {
+    padding-bottom: 20px;
+}
+
+.item button {
+    padding: 5px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.item button:hover {
+    background-color: #5B0800;
+    transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+    #items {
+        flex-direction: column;
+        margin: 0 10px;
+        row-gap: 10px;
+    }
 }
 
 @media (max-width: 700px) {
