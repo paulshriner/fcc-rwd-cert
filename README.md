@@ -33,9 +33,9 @@ A basic personal web page with links to projects and GitHub/freeCodeCamp profile
 
 ## Development Tools
 
-- [VS Code](https://code.visualstudio.com/) - Environment to write the HTML and CSS code.
-  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - VS Code extension that provides live reload capabilities for web pages.
-- Git/GitHub - Version control
+- [VS Code](https://code.visualstudio.com/) - Development environment
+  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - VS Code extension that provides live reload capabilities for web pages
+- [Git](https://git-scm.com/)/[GitHub](https://github.com/) - Version control
 
 ## Running the Projects
 
