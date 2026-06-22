@@ -1,4 +1,4 @@
-# freeCodeCamp Responsive Web Design Certificate
+# freeCodeCamp Legacy Responsive Web Design Certificate
 
 These are the projects I did in the completion of this certificate.
 
