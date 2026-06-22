@@ -4,7 +4,15 @@ These are the projects I did in the completion of this certificate.
 
 ## Projects
 
+### Survey Form
+
+A survey asking questions about Computer Science.
+
+![Image of Project](images/form-project.png)
+
 ## Skills
+
+- HTML
 
 ## Development Tools
 
