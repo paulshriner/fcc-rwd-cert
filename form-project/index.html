@@ -12,7 +12,41 @@
     </header>
 
     <main>
+        <form id="survey-form">
+            <h2 id="basic-info">Basic Information:</h2>
+            <label for="name" id="name-label">Name:<br><input id="name" type="text" name="name-label" placeholder="Enter your name..." required></label><br><br>
+            <label for="email" id="email-label">Email:<br><input id="email" type="email" name="email-label" placeholder="Enter your email..." required></label><br><br>
+            <label for="number" id="number-label">Age:<br><input id="number" type="number" name="number-label" min="13" max="120" placeholder="Age..." required></label>
 
+            <h2 id="main-questions">Main Questions:</h2>
+            <label for="dropdown">What best describes your current role?<br>
+                <select id="dropdown" name="role">
+                    <option value="">(select one)</option>
+                    <option value="1">Hobbiest/Tinkerer</option>
+                    <option value="2">Student</option>
+                    <option value="3">Employed in a CS related occupation</option>
+                    <option value="4">Teacher/Professor</option>
+                    <option value="5">Other</option>
+                </select>
+            </label><br><br>
+
+            <label>When did you start learning Computer Science?</label><br>
+            <label for="0-4yr"><input id="0-4yr" type="radio" name="timeframe" value="0-4" checked>0-4 years</label>
+            <label for="4-10yr"><input id="4-10yr" type="radio" name="timeframe" value="4-10">4-10 years</label>
+            <label for="10+yr"><input id="10+yr" type="radio" name="timeframe" value="10+">10+ years</label><br><br>
+
+            <label>What have you done to prepare for the field?</label><br>
+            <label for="job"><input id="job" type="checkbox" name="opportunities" value="job">Job</label>
+            <label for="internship"><input id="internship" type="checkbox" name="opportunities" value="internship">Internship</label>
+            <label for="college"><input id="college" type="checkbox" name="opportunities" value="college">College</label>
+            <label for="selfstudy"><input id="selfstudy" type="checkbox" name="opportunities" value="selfstudy">Self Study</label><br><br>
+
+            <label for="favorite">What would you tell to someone new to Computer Science?<br>
+                <textarea id="favorite" name="favorite" rows="3" cols="30" placeholder="Type your thoughts here..."></textarea>
+            </label><br><br>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
     </main>
 
     <footer>
