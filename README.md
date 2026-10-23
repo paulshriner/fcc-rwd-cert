@@ -10,9 +10,16 @@ A survey asking questions about Computer Science.
 
 ![Image of Project](images/form-project.png)
 
+### Playing Cards
+
+A page with playing cards displayed using flexbox. The cards resize when zoomed in and multiple symbols can be added on a card (for example the 10 card where 10 symbols are needed in the middle).
+
+![Image of Project](images/cards-project.png)
+
 ## Skills
 
 - HTML
+- CSS
 
 ## Development Tools
 
