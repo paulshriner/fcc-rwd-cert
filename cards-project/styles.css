@@ -21,21 +21,32 @@
     padding: 4px;
 }
 
+.red-card {
+    border-color: red;
+    color: red;
+}
+
 .left {
     align-self: flex-start;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .middle {
     align-self: center;
     display: flex;
     flex-direction: column;
-    font-size: 5rem;
+    align-items: center;
+    font-size: 3.5rem;
+    line-height: 55px;
+}
+
+.middle-section {
+    display: flex;
 }
 
 .right {
     align-self: flex-end;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .upside-down {
